@@ -7,10 +7,10 @@ print("\n\t\t\t -- Registered students -- \n")
 
 # Entrada
 
-student = str(input('Digit the name do student: '))
-note = float(input("Digit a note do student: "))
-course = str(input('Digit the course do student: '))
-matricula = input('active or desactive: ')
+student = str(input('Digite o nome do student: '))
+note = float(input("Digit a nota do student: "))
+course = str(input('Digit o curso do student: '))
+matricula = bool(input('active or desactive: '))
 
 
 # Processamento
