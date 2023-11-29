@@ -1,35 +1,29 @@
 # Gerenciamento de dados dos alunos
 
-
 # Apresentação
 
-print("\n\t\t\t -- Registered students -- \n")
+print("\n\t\t\t -- Registro de Estudantes -- \n")
 
 # Entrada
 
-student = str(input('Digite o nome do student: '))
-note = float(input("Digit a nota do student: "))
-course = str(input('Digit o curso do student: '))
-matricula = bool(input('active or desactive: '))
-
+estudantes = str(input('Digite o nome do(a) Estudante: '))
+nota = float(input('Digite a nota do(a) Estudante: '))
+curso = str(input('Digite o curso do(a) Estudante: '))
+matricula['Matrícula'] = True
 
 # Processamento
 
-register = {'Nome': 'nome', 'Nota': 'nota', 'Curso': 'curso', 'Matrícula': ''}
+registro = {'Nome': 'nome', 'Nota': 'nota', 'Curso': 'curso', 'Matrícula': ''}
 
-register['Nome'] = student
-register['Nota'] = note
-register['Curso'] = course
-
-register['Matrícula'] = matricula
+registro['Nome'] = estudante
+registro['Nota'] = nota
+registro['Curso'] = curso
+registro['Matrícula'] = matricula
 
 # saída
 
-if matricula == 'active':
-    print('true')
-else:
-    print('false')
-
-
-print(f'{register}')
+print(f'Nome: {register['Nome']}')
+print(f'Nota: {register['Nota']}')
+print(f'Curso: {register['Curso']}')
+print(f'Matrícula: {register['Matrícula']}')
 
